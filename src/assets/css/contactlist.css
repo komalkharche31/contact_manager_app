@@ -1,0 +1,33 @@
+
+.ContactList {
+    display: flex;
+    justify-content: space-between; /* Space between name/email and delete icon */
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff; /* White background for contrast */
+    border: 1px solid #3498db; /* Border to define the contact card */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    margin: 10px 0; /* Margin for spacing between contacts */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.ContactList:hover {
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+.ContactList div {
+    color: #333; /* Dark text color for readability */
+    font-size: 16px; /* Font size for better readability */
+}
+
+.ContactList span {
+    cursor: pointer; /* Change cursor to pointer for clickable icon */
+    color: #e74c3c; /* Red color for delete icon */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.ContactList span:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
