@@ -44,7 +44,7 @@ function AddContact({onFormChange}) {
                 <label>Email</label>
                 <input type="email" name="email" value={contactData.email} onChange={onChangeHandle} placeholder="Enter Email"/>
             </div>
-            <button type="submit">Add</button>
+            <button type="submit" style={{marginRight:"10px"}}>Add</button>
             <button onClick={()=>{ setContactData({name:"",email:""})}}>Clear</button>
         </form>
         

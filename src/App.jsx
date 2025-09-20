@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from `react`;
+import Header from "./Header"
 import AddContact from "./AddContact"
 import ContactList from "./ContactList"
+import Footer from "./Footer"
 import './assets/css/styles.css'
 
 function App() {
@@ -31,16 +33,16 @@ function App() {
   return(
     <>   
       <div className="container">  
-        <div className="header">Header</div>
+        <Header/>
         <div className="content">
-          <div className="sidebar left_sidebar">left Sidebar</div>
+          <div className="sidebar left_sidebar"></div>
           <div className="center_content">
               <div className="item"><AddContact onFormChange={addContact}/></div>
               <div><ContactList contact = {contact} removeContact = {removeContact}/></div>
           </div>
-          <div className="sidebar right_sidebar">Right Sidebar</div>
+          <div className="sidebar right_sidebar"></div>
         </div>     
-        <div  className="footer">Footer</div>        
+        <Footer/>
       </div>
     </>
   )

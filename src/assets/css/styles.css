@@ -4,7 +4,6 @@ body {
 }
 
 .container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -14,7 +13,6 @@ body {
     width: 100%;
     color: #3498db; 
     text-align: center;
-    padding: 20px;
     background-color: #eaf6ff; 
 }
 
@@ -60,4 +58,5 @@ body {
 .right_sidebar {
     text-align: right;
 }
+
 
